@@ -48,6 +48,8 @@
     #main-div {
         grid-area: main;
         background-color: #A35709;
+        display: flex;
+        
     
     
     }
@@ -109,9 +111,20 @@
 #main-div {
     grid-area: main;
     background-color: #A35709;
-
-
+    display: flex;
+    
 }
+
+.head{
+    text-align: right;
+}
+#img{
+   width: 10vw;
+    
+   
+    
+}
+
 
 #footer-div {
     grid-area: footer;

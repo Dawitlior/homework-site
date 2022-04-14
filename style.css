@@ -20,39 +20,59 @@
         grid-area: header;
         background-color: #F0E3CA;
         display: flex;
-        flex-direction: row;
-       
+        
+        
         
     }
+    /* facebook and git icons */
 
-    #face-pic{
-        width:8vw ;
-        height:10vh ;
-        
-    } 
 
-    #git-pic{
-       width:8vw ;
-       height:10vh ;
-    }
+
+
     
-    
+    /* side bar */
     #sidebar-div {
         grid-area: sidebar;
         background-color: #FF8303;
         display: flex;
         align-items: center;
+
     
     }
-    
+    /* this is main div */
     #main-div {
         grid-area: main;
         background-color: #A35709;
         display: flex;
         
-    
-    
+        
     }
+    /* this is the father of the pic */
+    .pic{
+        display:flex;
+        margin-right: -20vw;
+        
+    }
+    /* father of ul */
+    .melel{
+        display: flex;
+         
+    }
+    #ul{
+        
+        
+        
+    }
+/* this is the pic that inside the main */
+    #img {
+        width: 20vw;
+        height: 15vh;
+        border-radius: 40vw;
+        margin-left: 0vw;
+        
+        
+    }
+
     
     #footer-div {
         grid-area: footer;
@@ -67,7 +87,7 @@
 
 @media screen and (min-width:600px)
 {
-/* big screen */
+/* big screen - big screen */ 
 
 .container {
     display: grid;
@@ -82,49 +102,69 @@
         'footer footer footer footer'
     ;
 }
-
+/* where the links to face&gite in */
 #header-div {
     grid-area: header;
-    background-color: #F0E3CA;
+    background-color: #A35709;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
+/* facebook and githab items */
 
-#face-pic{
-    width:8vw;
-    height:15vh;
-}
-#git-pic{
-    width:8vw;
-    height:15vh;
-}
 
+
+
+}
+/* sidebar */
 #sidebar-div {
     grid-area: sidebar;
-    background-color: #FF8303;
+    background-color: #f8a304;
     display: flex;
     align-items: center;
 
 }
-
+/* all the text in the website */
 #main-div {
     grid-area: main;
-    background-color: #A35709;
+    background-color: #F0E3CA;
     display: flex;
+    flex-direction: row;
     
 }
-
+/* h1 and paragraph */
 .head{
-    text-align: right;
-}
-#img{
-   width: 10vw;
-    
-   
     
 }
 
+/* my personal img */
+
+.pic{
+    display: flex;
+    margin-right: 15vw;
+    
+    
+    
+    
+}
+.melel{
+    margin-right: 20vw;
+    
+    
+}
+
+#img{
+    width: 10vw;
+    height: 30vh;
+   border-radius: 12vh;
+ 
+}
+
+#img:hover{
+    width: 15vw;
+    box-shadow: (10px 3px 7px);
+    
+}
 
 #footer-div {
     grid-area: footer;
@@ -137,6 +177,6 @@
 }
 
 
-}
+
     
 

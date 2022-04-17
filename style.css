@@ -1,7 +1,7 @@
 @media screen and ( max-width:600px )
 
 {
-/* small screen */
+/* this is for small screen */
     .container {
         display: grid;
         width: 100vw;
@@ -15,65 +15,93 @@
             'footer footer footer footer'
         ;
     }
-    
+    /* this is the header div */
     #header-div {
         grid-area: header;
         background-color: #F0E3CA;
         display: flex;
-        
-        
+        height:3vh;    
+    }
+
+    /* facebook and git icons */
+    #social-media{
+    display: flex;
+    font-size:7vw ;
+    
         
     }
-    /* facebook and git icons */
-
-
-
+    #facebook{
+    margin-left: 30vw;
+    display: flex;
+    width: 50vw;
+    
+    
+    }
+    
+    #github{
+    display: flex;
+    
+    }
 
     
-    /* side bar */
+    /*this is the side bar */
     #sidebar-div {
         grid-area: sidebar;
-        background-color: #FF8303;
+        background-color: #0a0501;
         display: flex;
         align-items: center;
-
+        width: 15vw;
     
     }
-    /* this is main div */
+    /* this is the main div */
     #main-div {
         grid-area: main;
         background-color: #A35709;
         display: flex;
-        
+        width: 100vw;
+        height: 100vh;
         
     }
     /* this is the father of the pic */
     .pic{
         display:flex;
-        margin-right: -20vw;
+        flex-direction: column;
+        width:5vw ;
+        height:5vh;
         
     }
     /* father of ul */
     .melel{
         display: flex;
+        font-style: italic;
+       margin-left: 15vw;
+        position: fixed;
+
          
     }
-    #ul{
-        
-        
-        
+    /* all the li in the main */
+    .li1{
+        width: 50vw;  
     }
-/* this is the pic that inside the main */
-    #img {
-        width: 20vw;
-        height: 15vh;
-        border-radius: 40vw;
-        margin-left: 0vw;
-        
-        
+    .li2{
+        width: 50vw;
+    }
+    .li3{
+        width: 50vw;
+    }
+    .li4{
+        width: 50vw;
     }
 
-    
+/* this is the pic that inside the main */
+    #img {
+        width: 5vw;
+        height: 15vh;
+        border-radius: 40vw;
+        margin-left: 0vw;    
+        }
+
+    /* this is the footer */
     #footer-div {
         grid-area: footer;
         background-color: #1B1A17;
@@ -82,6 +110,10 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        height: 7vh;
+        
+        
+        
     }
 }    
 
@@ -109,17 +141,33 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+   
+    
 }
 /* facebook and githab items */
+#social-media{
+    display: flex;
+    font-size: 5vw;
+    height: 9vh;
+}
 
+#facebook{
+    color: #1227e7;
+    width: 20vw;
+}
 
+#github{
+    color: #110d01;
+    margin-left: 15vw;
+    
+}
 
 
 }
 /* sidebar */
 #sidebar-div {
     grid-area: sidebar;
-    background-color: #f8a304;
+    background-color: #0c0902;
     display: flex;
     align-items: center;
 
@@ -133,9 +181,7 @@
     
 }
 /* h1 and paragraph */
-.head{
-    
-}
+
 
 /* my personal img */
 
@@ -154,14 +200,15 @@
 }
 
 #img{
-    width: 10vw;
+    width: 20vw;
     height: 30vh;
    border-radius: 12vh;
  
 }
 
 #img:hover{
-    width: 15vw;
+    width: 35vw;
+    height: 35vh;
     box-shadow: (10px 3px 7px);
     
 }

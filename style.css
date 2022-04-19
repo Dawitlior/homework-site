@@ -1,58 +1,58 @@
-@media screen and ( max-width:600px )
+@media screen and ( max-width: 600px ) {
 
-{
-/* this is for small screen */
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }    
+    
+    /* this is for small screen */
+
     .container {
         display: grid;
+        position: fixed;
         width: 100vw;
         height: 100vh;
-        gap: 2vh;
+        gap: 1vh;
         grid-template-areas:
-            'header header header header'
-            'sidebar main main main '
-            'sidebar main main main '
-            'sidebar main main main '
-            'footer footer footer footer'
+            'header header header'
+            'main main main '
+            'main main main '
+            'main main main '
+            'footer footer footer'
         ;
     }
     /* this is the header div */
     #header-div {
         grid-area: header;
-        background-color: #F0E3CA;
+        background-color: #cc1a1af1;
         display: flex;
-        height:3vh;    
+        height:5vh; 
+        position: sticky;
+           
     }
-
+    
     /* facebook and git icons */
     #social-media{
-    display: flex;
-    font-size:7vw ;
-    
-        
+        display: flex;
+        font-size:10vw ;
+          
     }
     #facebook{
-    margin-left: 30vw;
-    display: flex;
-    width: 50vw;
-    
-    
+        margin-left: 30vw;
+        width: 40vw;
+        color: #0a0501;   
     }
     
     #github{
-    display: flex;
-    
+        color: #0a0501;
+        
     }
-
     
     /*this is the side bar */
-    #sidebar-div {
-        grid-area: sidebar;
-        background-color: #0a0501;
-        display: flex;
-        align-items: center;
-        width: 15vw;
-    
-    }
+  
+   
+   
     /* this is the main div */
     #main-div {
         grid-area: main;
@@ -60,42 +60,28 @@
         display: flex;
         width: 100vw;
         height: 100vh;
+        overflow: scroll;
         
     }
     /* this is the father of the pic */
-    .pic{
+    .main{
         display:flex;
         flex-direction: column;
         width:5vw ;
         height:5vh;
         
     }
-    /* father of ul */
+    
     .melel{
         display: flex;
         font-style: italic;
-       margin-left: 15vw;
-        position: fixed;
-
-         
-    }
-    /* all the li in the main */
-    .li1{
-        width: 50vw;  
-    }
-    .li2{
-        width: 50vw;
-    }
-    .li3{
-        width: 50vw;
-    }
-    .li4{
-        width: 50vw;
+       margin-left: 20vw;
+        position: fixed;   
     }
 
 /* this is the pic that inside the main */
     #img {
-        width: 5vw;
+        width: 15vw;
         height: 15vh;
         border-radius: 40vw;
         margin-left: 0vw;    
@@ -108,24 +94,28 @@
         color: #F0E3CA;
         text-align: center;
         display: flex;
-        flex-direction: column;
+        flex-direction:column;
         justify-content: flex-end;
         height: 7vh;
-        
-        
-        
+        position: sticky;
     }
 }    
 
 @media screen and (min-width:600px)
 {
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 /* big screen - big screen */ 
 
 .container {
     display: grid;
     width: 100vw;
     height: 100vh;
-    gap: 2vh;
+    gap: 1vh;
     grid-template-areas:
         'header header header header'
         'sidebar main main main '
@@ -137,7 +127,7 @@
 /* where the links to face&gite in */
 #header-div {
     grid-area: header;
-    background-color: #A35709;
+    background-color: #1a1816;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -157,60 +147,63 @@
 }
 
 #github{
-    color: #110d01;
-    margin-left: 15vw;
-    
+    color: #1227e7;
+    margin-left: 15vw;   
 }
 
 
 }
-/* sidebar */
+/*this is the sidebar */
 #sidebar-div {
     grid-area: sidebar;
-    background-color: #0c0902;
+    background-color: #0c0902fa;
+    color:#ffffff;
+    width: vw;
     display: flex;
-    align-items: center;
+}
 
+.side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 /* all the text in the website */
 #main-div {
     grid-area: main;
-    background-color: #F0E3CA;
+    background-color: #58544b;
     display: flex;
     flex-direction: row;
-    
+    overflow: scroll;
+    font-style:normal;
 }
-/* h1 and paragraph */
 
 
-/* my personal img */
-
-.pic{
+.main{
     display: flex;
-    margin-right: 15vw;
-    
-    
-    
-    
+    margin-right: 12vw;
+    padding-right: 30vw;
+       
 }
 .melel{
-    margin-right: 20vw;
-    
-    
+    margin-right: 5vw;
+    border: 4px solid black;
+    border-radius:5vh;
+    color: #01020e;
 }
 
 #img{
-    width: 20vw;
+    width: 15vw;
     height: 30vh;
    border-radius: 12vh;
+   border: 1px solid;
  
 }
 
 #img:hover{
-    width: 35vw;
+    width: 25vw;
     height: 35vh;
-    box-shadow: (10px 3px 7px);
-    
+    filter:drop-shadow(20px 4px 3px);
 }
 
 #footer-div {

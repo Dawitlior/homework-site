@@ -1,0 +1,121 @@
+@media screen and (max-width: 600px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    /* this is for small screen */
+
+    .container {
+        display: grid;
+        position: fixed;
+        /* width: 100vw; */
+        /* height: 100vh; */
+        gap: 1vh;
+        overflow: scroll;
+        grid-template-areas:
+            'header header header'
+            'main main main '
+            'main main main '
+            'main main main '
+            'footer footer footer '
+        ;
+    }
+
+    /* this is the header div */
+    #header-div {
+        grid-area: header;
+        background-color: #cc1a1af1;
+        display: flex;
+        width: 100vw;
+        height: 5vh;
+        position: sticky;
+        
+    }
+
+    /* facebook and git icons */
+    #social-media {
+        display: flex;
+        font-size: 10vw;
+
+    }
+
+    #facebook {
+        margin-left: 30vw;
+        width: 40vw;
+        color: #0a0501;
+    }
+
+    #github {
+        color: #0a0501;
+
+    }
+
+    /* this is the main div */
+    #main-div {
+        grid-area: main;
+        background-color: #A35709;
+        display: flex;
+        /* position: absolute; */
+        width: 100vw;
+        height: 100vh;
+        /* overflow: scroll; */
+
+    }
+
+    /* this is the father of the pic */
+    .main {
+        display: flex;
+        flex-direction: column;
+        width: 5vw;
+        height: 5vh;
+
+
+    }
+
+    .melel {
+        /* display: flex; */
+
+        font-style: italic;
+        margin-left: 5vw;
+        position: fixed;
+    }
+
+    /* this is the pic that inside the main */
+    #img {
+        width: 15vw;
+        height: 15vh;
+        border-radius: 40vw;
+        margin-left: 60vw;
+    }
+
+    .pic-box {
+        display: flex;
+        gap: 3vw;
+        /* margin-left: 10vw; */
+        /* padding-right: 20vw; */
+        width: 30%;
+    }
+
+    .article {
+        margin-left: 7vw;
+
+
+    }
+
+    /* this is the footer */
+    #footer-div {
+        grid-area: footer;
+        background-color: #1B1A17;
+        color: #F0E3CA;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 7vh;
+        
+    }
+}

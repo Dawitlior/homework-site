@@ -28,13 +28,14 @@
     grid-area: header;
     background-color: #1a1816;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-evenly;
-   
+    
     
 }
 /* facebook and githab items */
 #social-media{
+    
     display: flex;
     font-size: 5vw;
     height: 9vh;
@@ -43,6 +44,7 @@
 #facebook{
     color: #1227e7;
     width: 20vw;
+    
 }
 
 #github{
@@ -82,7 +84,21 @@
     display: flex;
     margin-right: 12vw;
     padding-right: 30vw;
+    animation-name: pic-box;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: alternate;
        
+}
+@keyframes pic {
+    50% {
+        background-image: url(./images/pic1.jpeg);
+    }
+
+    100% {
+        background-image: url(./pic2.jpeg);
+    }
+
 }
 .melel{
     margin-right: -20vw;
@@ -91,6 +107,7 @@
     color: #01020e;
     display: flex;
     flex-direction: column;
+    /* width:-10vw ; */
 }
 
 #img{
@@ -102,31 +119,19 @@
 }
 
 #img:hover{
-    width: 25vw;
-    height: 35vh;
+    width: 20vw;
+    height: 40vh;
     filter:drop-shadow(20px 4px 3px);
 }
 .pic-box{
     display: flex;
     gap: 3vw;
     /* margin-left: 20vw; */
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
 
-    animation-name: pic-box;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: alternate;
 }
-@keyframes pic-box{
-    50%{
-        background-image: url(./images/pic1.jpeg);
-    }
-    100%{
-        background-image: url(./pic2.jpeg);
-    }
-    
-}
+
 
 #pic-box{
     width: 60%;

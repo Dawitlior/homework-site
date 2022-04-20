@@ -12,16 +12,16 @@
     .container {
         display: grid;
         position: fixed;
-        /* width: 100vw; */
-        /* height: 100vh; */
+        width: 100vw;
+        height: 100vh;
         gap: 1vh;
-        overflow: scroll;
+        /* overflow: scroll; */
         grid-template-areas:
-            'header header header'
-            'main main main '
-            'main main main '
-            'main main main '
-            'footer footer footer '
+            'header header header header'
+            'main main main main '
+            'main main main main '
+            'main main main main '
+            'footer footer footer footer '
         ;
     }
 
@@ -30,16 +30,18 @@
         grid-area: header;
         background-color: #cc1a1af1;
         display: flex;
-        width: 100vw;
-        height: 5vh;
-        position: sticky;
-        
+        /* width: 100vw; */
+        /* height: 5vh; */
+        /* position: sticky; */
+
     }
+  
 
     /* facebook and git icons */
     #social-media {
         display: flex;
-        font-size: 10vw;
+        font-size: 7vw;
+        
 
     }
 
@@ -53,17 +55,37 @@
         color: #0a0501;
 
     }
+    #sidebar-div {
+    grid-area: sidebar;
+    background-color: #0c0902fa;
+    color:#ffffff;
+    width: vw;
+    display: flex;
+}
 
     /* this is the main div */
     #main-div {
         grid-area: main;
-        background-color: #A35709;
+        background-color: #cc6907;
         display: flex;
-        /* position: absolute; */
         width: 100vw;
         height: 100vh;
         /* overflow: scroll; */
-
+        
+    }
+    .head{
+        /* align-content: center; */
+        justify-content: center;
+        margin-right:0% ;
+    }
+    .melel {
+        display: flex;
+        
+        font-style: italic;
+        /* margin-right: 10vw; */
+        /* position: fixed; */
+        width: 100vw;
+        height: 0vh;
     }
 
     /* this is the father of the pic */
@@ -75,21 +97,14 @@
 
 
     }
-
-    .melel {
-        /* display: flex; */
-
-        font-style: italic;
-        margin-left: 5vw;
-        position: fixed;
-    }
+    
 
     /* this is the pic that inside the main */
     #img {
-        width: 15vw;
+        width: 25vw;
         height: 15vh;
         border-radius: 40vw;
-        margin-left: 60vw;
+        margin-right: 20vw;
     }
 
     .pic-box {
@@ -102,8 +117,16 @@
 
     .article {
         margin-left: 7vw;
-
-
+        
+    }
+    .head{
+        
+    }
+    .h1{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-left: 35vw;
     }
 
     /* this is the footer */
@@ -116,6 +139,7 @@
         flex-direction: column;
         justify-content: flex-end;
         height: 7vh;
+        
         
     }
 }
